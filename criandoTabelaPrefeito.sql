@@ -5,5 +5,5 @@ CREATE TABLE IF NOT EXISTS prefeitos (
     area DECIMAL(10,2),
     PRIMARY KEY (id),
     UNIQUE KEY (cidade_id),
-    FOREIGN KEY (cidade_id) REFERENCES estados (id)
+    FOREIGN KEY (cidade_id) REFERENCES cidades (id)
 );
